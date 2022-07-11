@@ -1,0 +1,126 @@
+/* UNIVERSAL STYLES */
+/* Styles that affect every element of the page */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+body {
+  background-color: hsl(0, 12%, 90%);
+  background-image: url(images/hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  overflow: hidden;
+}
+
+/* GLOBAL LINK STYLES - affects all links in the sheet */
+a {
+  text-decoration: none;
+}
+
+/* BODY STYLES */
+.container {
+  height: 100vh;
+  max-width: 400px;
+  width: 100%;
+  margin: 80px 150px 0;
+}
+span {
+  color: hsl(0, 40%, 68%);
+  font-weight: 300;
+}
+.body-text h2 {
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-top: 80px;
+  line-height: 60px;
+}
+
+.body-text p {
+  margin-top: 20px;
+  line-height: 25px;
+  color: hsl(0, 40%, 68%);
+}
+#label-el {
+  position: relative;
+}
+input {
+  margin-top: 30px;
+  max-width: 400px;
+  width: 90%;
+  padding: 15px 0 16px 20px;
+  border-radius: 30px;
+  border: 1px solid hsl(0, 60%, 80%);
+  outline: none;
+  color: #333;
+  position: relative;
+}
+
+button {
+  display: inline-block;
+  font-size: 25px;
+  padding: 11px 30px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(135deg, rgba(248, 191, 191), rgba(238, 140, 140));
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  color: #fff;
+  font-weight: 300;
+  /* transform: scale(1.05); */
+  position: absolute;
+  top: -14.8px;
+  left: 310px;
+}
+button:hover {
+  background: rgba(248, 190, 190);
+  transform: scale(1.04);
+}
+
+p#error-msg {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 14px;
+  color: red;
+  font-weight: 600;
+  /* position: absolute; */
+}
+.active {
+  border: 1.5px solid red;
+}
+
+/* FOOTER STYLING */
+footer p {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+footer p a {
+  color: #333;
+}
+
+/* MEDIA QUERIES */
+/* @ 1219px and below */
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url(images/hero-mobile.jpg);
+    background-size: contain;
+    background-position: 10px;
+  }
+
+  /* .container {
+    margin-left: 0;
+    height: auto;
+  } */
+
+  .body-text {
+    margin-top: 200px;
+  }
+}
