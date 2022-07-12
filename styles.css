@@ -47,7 +47,7 @@ span {
   line-height: 25px;
   color: hsl(0, 40%, 68%);
 }
-#label-el {
+label {
   position: relative;
 }
 input {
@@ -61,6 +61,14 @@ input {
   color: #333;
   position: relative;
 }
+svg {
+  position: absolute;
+  right: 55px;
+  bottom: -5px;
+}
+svg.hidden {
+  display: none;
+}
 
 button {
   display: inline-block;
@@ -73,7 +81,6 @@ button {
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   color: #fff;
   font-weight: 300;
-  /* transform: scale(1.05); */
   position: absolute;
   top: -14.8px;
   left: 310px;
@@ -89,7 +96,7 @@ p#error-msg {
   font-size: 14px;
   color: red;
   font-weight: 600;
-  /* position: absolute; */
+  position: absolute;
 }
 .active {
   border: 1.5px solid red;
